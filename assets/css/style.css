@@ -1,185 +1,220 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
 
-*{ 
- margin:0%;
- padding:0%;
- border:none;
+* {
+    padding: 0%;
+    border: none;
 }
 
-body{
-    font-family:lato, sans-serif;
-    font-weight:300;
-    color:#3a3a3a;
+body {
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+    background-color: #96AFBB;
+    margin: 0%;
 }
 
 /*headings and logo */
-h1,h2{
-    font-family:lato, sans-serif;
-    letter-spacing:2px;
-    color:#252525;
+h1,
+h2 {
+    font-family: lato, sans-serif;
+    letter-spacing: 2px;
+    color: #252525;
+    margin: 0%;
 }
 
 #logo {
-    float:left; 
-    font-size:280%;
-    margin-left:20px;
- }
-
- /* navigation links */
-
-#menu{
-    font: size 110%;
-    letter-spacing:4px;
-    }
-    
-#menu,#logo{
-        line-height:75px;
-    }
-    
-#menu li{ 
-        float:right;
-        list-style-type:none;
-        margin-right:30px
-    }
-
-#menu a{
-        text-decoration:none;
-        color: inherit;
-    }
-
-#menu a:hover{
-        border-bottom:1px solid #3a3a3a;
-    }
-
-.active{
-        border-bottom:1px solid #3a3a3a;
-    }
-
-    /* hero image and cover text */
-
-    #hero-outer{
-        height:600px;
-        width:100%;
-        overflow:hidden;
-    
-        position:relative;
-    }
-
-    #hero-image{
-        height:600px;
-        width:100%;
-        background:url('../images/temp.webp') no-repeat center center;
-
-    /* animates zoom effect on loading page */
-    animation-name:hero-zoom;
-    animation-duration:5s;
-    animation-fill-mode:forwards;
-    }
-
-    /*creates the level of zoom for hero image */
-@keyframes hero-zoom{
-    from{
-    transform:scale(1);
-    }
-    to{
-     transform: scale(1.1);
-    }
-}
-/* welcome about */
-
-/* club ethos */
-
-#club-ethos{
-    height:600px;
-
+    float: left;
+    font-size: 280%;
+    margin-left: 20px;
 }
 
-#left-about{
-    padding-top:30px;
-    width:33%; 
-    float:left; 
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
 }
 
-#right-about{
-    padding-top:30px;
-    width:33%;
-    float:right;
+#menu,
+#logo {
+    line-height: 75px;
 }
 
-#center-about{
-    width:33%;
-    margin:0 auto;
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px
 }
 
-hr {
-   border-top:1px solid #3a3a3a;
-   width:100%;
-   margin:5px; 
+#menu a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.left-about-heading{
-    width:60%;
-    float:right;
-    line-height:20px;
-    clear:both;
-    margin-bottom:50px;
-}
-.right-about-heading{
-    width:60%;
-    float:left;
-    line-height:20px;
-    clear:both;
-    margin-bottom:50px;
+#menu a:hover {
+    color: silver;
 }
 
-.right-about-heading h2{
-   text-align:right;
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
-.right-about-heading p{
-    text-align:right;
+/* hero video and cover text */
+#hero-video {
+    margin: 0%;
 }
 
-#welcome{
-    text-align:center;
-    margin:20px 0;
-    font-size:280%;
+/* welcome about us*/
+
+#welcome {
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    border: none;
 }
 
-#circle-container{
-    width:300px;
-    height:300px;
-    padding:30px;
-    border-style:solid;
-    border-color:#ccc;
-    border-width:1px;
-    border-radius:50%;
-    margin: 0 auto;
-}
-
-#circle-cover-bg{
-    background: url('../images/ethos-center-image.jpeg') no-repeat center center;
-    height:100%;
-    border-radius:50%;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* footer */
-
-footer {
-    height: 150px;
-}
-
-.social-networks {
-    text-align: center;
-}
-
-.social-networks > li {
+.social-networks>li {
     display: inline;
+    margin: 0%;
 }
 
 .social-networks i {
     font-size: 160%;
-    margin: 1%;
+    margin: 0%;
     padding: 5%;
     color: #3a3a3a;
-}    
+}
+
+/*poses description*/
+
+.pose {
+    display: flex;
+    padding: 10px;
+
+}
+
+.poses-intro {
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 60px;
+}
+
+#breathing-video {
+    width: 800px;
+    height: 450px;
+    margin: 0%;
+}
+
+/* Form */
+.form-section {
+    clear: left;
+    background-image: url("https://images.pexels.com/photos/3822647/pexels-photo-3822647.jpeg?cs=srgb&dl=pexels-elina-fairytale-3822647.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 600px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+.signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: lightblue;
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #f16c6b;
+}
+
+/* Media Queries */
+
+/*For larger to medium screens from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #welcome {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #hero-video {
+        width: 1200px;
+        height: auto;
+    }
+}
+
+/*For medium screen sizes from 951px wide and down */
+@media screen and (max-width: 951px) {
+    #menu {
+        display: block;
+        font-size: 16px;
+    }
+
+    #logo {
+        font-size: 25px;
+        margin: 3px;
+    }
+    #hero-video {
+        width: 650px;
+        height: auto;
+
+    }
+    #breathing-video {
+        width: 515px;
+        height: auto;
+    }
+
+    #poses-intro {
+        width: 100%;
+    }
+}
+
+/*screen sizes 500px wide and down*/
+@media screen and (max-width: 500px) {
+#hero-video {
+    width: 500px;
+    height: auto;
+}
+}
